@@ -56,7 +56,8 @@ def solve_problem(G, sampler):
     '''
 
     ## TODO:  Update dwave.graphs function to new problem function
-
+  vertex_cover = dg.min_vertex_cover(G, sampler=sampler, num_reads=10)
+  return vertex_cover
     return 
 
 ## ------- Main program -------
