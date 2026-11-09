@@ -23,14 +23,18 @@ import matplotlib
 matplotlib.use("agg")
 import matplotlib.pyplot as plt
 
+from dwave.samplers import SimulatedAnnealingSampler
+
 # Set the solver we're going to use
 def set_sampler():
     '''Returns a simulated annealing sampler'''
     
     ## TODO:  Import packages and add sampler here
-from dwave.samplers import SimulatedAnnealingSampler
+def set_sampler():
+    '''Returns a dimod sampler'''
 
-sampler = SimulatedAnnealingSampler
+    sampler = SimulatedAnnealingSampler()
+
     return sampler
 
 def create_graph():
