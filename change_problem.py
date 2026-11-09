@@ -40,7 +40,7 @@ def create_graph():
     G = nx.Graph()
 
     ## TODO:  Update graph to new problem graph
-
+  G.add_edges_from([(0, 1), (1, 2), (2, 3), (1, 4), (2, 5), (3, 6), (4, 5), (5, 6), (6, 7)])
     return G
 
 def solve_problem(G, sampler):
