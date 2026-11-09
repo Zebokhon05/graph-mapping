@@ -28,8 +28,10 @@ def set_sampler():
     '''Returns a simulated annealing sampler'''
     
     ## TODO:  Import packages and add sampler here
+from dwave.samplers import SimulatedAnnealingSampler
 
-    return 
+sampler = SimulatedAnnealingSampler
+    return sampler
 
 def create_graph():
     # Create empty graph
